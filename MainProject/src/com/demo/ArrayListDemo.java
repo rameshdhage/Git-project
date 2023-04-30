@@ -1,6 +1,7 @@
 package com.demo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemo {
 	public static void main(String[] args) {
@@ -10,7 +11,17 @@ public class ArrayListDemo {
 		al.add("shashi");
 		al.add("rawi");
 		
-		System.out.println(al);
+  for(String itr:al) {
+	 System.out.println(itr);}
+  
+       Iterator<String >itr= al.iterator();
+       
+       while(itr.hasNext()) {
+    	   System.out.println(itr.next());
+       }
+  
+  
+  
 	}
 
 }
